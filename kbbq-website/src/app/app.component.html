@@ -1,0 +1,5 @@
+<app-nav-top class="nav-top" [className]="mobileView ? 'nav-mobileView'"></app-nav-top>
+<app-nav-side class="nav-side" *ngIf="mobileView"></app-nav-side>
+<app-mainpage></app-mainpage>
+<app-mainpage-mobile *ngIf="mobileView"></app-mainpage-mobile>
+<app-footer></app-footer>

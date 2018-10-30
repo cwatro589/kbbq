@@ -1,0 +1,13 @@
+<ul class="nav">
+	<li *ngFor="let menu of menulist" (click)="navLink({{menu.link}})" aria-role="button" aria-label="{{menu.text}}">
+		{{menu.text}}
+	</li>
+</ul>
+<div class="sns-container">
+	<a href="#" aria-label="Facebook" aria-role="button">
+		<i class="fab fa-facebook-square" aria-hidden="true"></i>
+	</a>
+	<a href="#" aria-label="Tweeter" aria-role="button">
+		<i class="fab fa-twitter-square" aria-hidden="true"></i>
+	</a>
+</div>
